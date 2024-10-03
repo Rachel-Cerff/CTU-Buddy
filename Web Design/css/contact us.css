@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppoins', sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, rgb(0, 85, 111), rgb(1, 67, 87), rgb(0, 23, 48)) ;
+    justify-content: center;
+    padding: 100px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12.5%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img {
+    padding-left: 3rem;
+    width: 15rem;
+    margin: 0;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.navbar a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.search-bar{
+    width: 250px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;  
+}
+
+.search-bar input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    padding-left: 10px;
+}
+
+.search-bar input::placeholder{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-bar button{
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-bar button i{
+    font-size: 22px;
+    color: black;
+}
+
+/*background animation*/
+.bg{
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(0, 85, 111) 50%, rgb(0, 23, 48) 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2{
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3{
+    animation-duration: 5s;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(-25%);
+    }
+    100%{
+        transform: translateX(25%);
+    }
+}
+
+
+h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cotact{
+    padding: 1rem 3%;
+}
+
+.contact h1 {
+    padding-top: 7rem;
+    font-size: 4rem;
+    color: red;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.map iframe{
+    padding-top: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+.form-container{
+    padding: 20px;
+    background: whitesmoke;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Form */
+.contact.form {
+    margin-top: 20px;
+    padding: 20px;
+    background: whitesmoke;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+ 
+.contact h3 {
+    color: rgb(120, 14, 49);
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+ 
+/* Form Styling */
+.formBox {
+    position: relative;
+    width: 100%;
+}
+ 
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+ 
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+ 
+.inputBox span {
+    color: rgb(209, 24, 85);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+ 
+.inputBox input,
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #383838;
+}
+ 
+.inputBox textarea {
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+ 
+.inputBox input[type="submit"] {
+    background: rgb(62, 10, 27);
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+    margin-left: 570px;
+    border-radius: 10px;
+    transition: all 0.75s ease;
+}
+ 
+.inputBox input[type="submit"]:hover {
+    background: rgb(166, 26, 72);
+    color: white;
+    font-size: 1.1em;
+    border: 2px solid rgb(166, 26, 72);
+    max-width: 120px;
+    cursor: pointer;
+    padding: 14px 15px;
+    border-radius: 10px;
+}
+ 
+.inputBox::placeholder {
+    color: #999999db;
+}
+
+
+footer {
+    margin-top: 50px;
+    clear: both;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: whitesmoke;
+}
+
+.nav-footer {
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.nav-footer a {
+    color: #383838;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-text p {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.footer span p{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}

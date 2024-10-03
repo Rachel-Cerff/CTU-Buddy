@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Resources</title>
+    <link rel="stylesheet" href="Share Resouces.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="Index.html">
+            <img src="logo-02-2024.png" alt="CTU Logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="Timetable.html">Timetable</a>
+            <a href="index.php">Discussion</a>
+            <a href="Share Resouces.html">Share Resources</a>
+            <a href="About us.html">About us</a>
+            <a href="Contact us.html">Contact us</a>
+        </nav>
+
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="Submit"><i class='bx bx-search-alt-2'></i></button>
+        </form>
+    </header>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <section class="resources">
+            <h1 class="resources-heading">Shared Resources</h1>
+        <p class="resources-text">
+            Welcome to the Shared Resources section of CTU Training Solutions' college website! Here, we provide a diverse range of educational materials, tools, and information to support students, educators, and parents in their academic pursuits. Dive into these resources to enrich your learning experience and maximize your time at CTU.
+        </p>
+        <h2 class="resources-heading">Categories of Shared Resources:</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Academic Support</h2>
+                <div class="image-container">
+                    <img src="academic support 1.jpg" alt="Academic Support 1">
+                </div>
+                <p>Course Materials: Access course outlines, lectures, and study guides for each program. <br>
+                   eBooks and Research Papers: Digital resources for further reading and research. <br>
+                   Exam Preparation Resources: Practice tests, past exam papers, and study tips.</p>
+            </div>
+    
+            <div class="grid-item">
+                <h2>Digital Learning Tools</h2>
+                <div class="image-container">
+                    <img src="uni class.jpg" alt="Digital Learning Tools 1">
+                </div>
+                <p>Online Learning Platforms: Links to e-learning platforms and virtual classrooms. <br>
+                   Interactive Simulations: Tools for hands-on learning and practical applications. <br>
+                   Educational Software: Software recommendations to aid in academic success.
+                </p>
+            </div>
+    
+            <div class="grid-item">
+                <h2>Career Development</h2>
+                <div class="image-container">
+                    <img src="computer table.jpg" alt="Career Development 1">
+                </div>
+                <p>Internship Opportunities: Information on available internships and work placements. <br>
+                Career Guidance Resources: Tips for resume building, interview preparation, and job search. <br>
+                Professional Development Workshops: Workshops to enhance job readiness and soft skills.
+                </p>
+            </div>
+    
+            <div class="grid-item">
+                <h2>Community Engagement</h2>
+                <div class="image-container">
+                    <img src="academic support 8.jpg" alt="Community Engagement 1">
+                </div>
+                <p>Student Clubs and Organizations: Opportunities to get involved in extracurricular activities. <br>
+                Community Service Initiatives: Information on volunteer opportunities and community projects. <br>
+                Events Calendar: Stay updated on school events, workshops, and guest lectures.
+                </p>
+            </div>
+            
+            <div class="grid-item">
+                <h2>Student Support Services</h2>
+                <div class="image-container">
+                    <img src="share resources.jpg" alt="Student Support Services 1">
+                </div>
+                <p>Counselling and Wellness Resources: Support services for mental health and well-being. <br>
+                    Academic Advising: Guidance on course selection, academic planning, and career pathways. <br>
+                    Financial Aid Information: Resources and guidance on scholarships, grants, and financial assistance.
+                </p>
+            </div>
+    
+            <div class="grid-item">
+                <h2>Technology Resources</h2>
+                <div class="image-container">
+                    <img src="academic support 7.jpg" alt="Technology Resources 1">
+                </div>
+                <p>Technical Tools: Access to software and applications for technical skill development. <br>
+                    Programming Resources: Tutorials, coding challenges, and resources for programming languages. <br>
+                    Technology Workshops: Workshops and seminars focused on emerging technologies and trends.
+                </p>
+            </div>
+        </div>
+
+        <p class="resource-text">Welcome to our document sharing platform! This form allows you to upload documents to share valuable information, resources, and insights with your fellow students. Whether it's lecture notes, study guides, research papers, or other educational materials, your contributions can greatly benefit the learning community.</p>
+
+        <form class="upload-form" action="Upload.php" method="post" enctype="multipart/form-data" onsubmit="showSpinner()">
+            <h1>Select a File to Upload</h1>
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload File" name="submit">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <nav class="nav-footer">
+            <a href="index.html">Home</a>
+            <a href="Timetable.html">Timetable</a>
+            <a href="index.php">Discussion</a>
+            <a href="About us.html">About us</a>
+            <a href="Contact us.html">Contact us</a>
+        </nav>
+        <span><p>Rachel Cerff - Code Gods - 20240037</p></span> 
+        <div class="footer-text">
+            <p>Copyright © 2024 Created by Rachel Cerff CTU Students| All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
